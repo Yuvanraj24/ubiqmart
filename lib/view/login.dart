@@ -4,6 +4,7 @@ import 'package:flutter/services.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:ubiqmart_new/values/constant.dart';
+import 'package:ubiqmart_new/view/main_screen.dart';
 
 class Login extends StatefulWidget {
   const Login({Key? key}) : super(key: key);
@@ -265,6 +266,7 @@ class _LoginState extends State<Login> {
                     fixedSize:  Size(120.w, 42.h),
                   ),
                     onPressed: (){
+                    Navigator.push(context, MaterialPageRoute(builder: (context) => MainScreen(),));
 
                     },
                     child: const Text("Login")
